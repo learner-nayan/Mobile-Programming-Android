@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">First Android App</string>
+
+    <string-array name="country_list">
+        <item>nepal</item>
+        <item>india</item>
+        <item>china</item>
+        <item>bhutan</item>
+        <item>sri lanka</item>
+    </string-array>
+
+    <string-array name="student_list">
+        <item>Raj Mangal Baitha</item>
+        <item>Shiv Mangal Baitha</item>
+        <item>Abiskar Deuja</item>
+        <item>Pusparaj Nepal</item>
+    </string-array>
+</resources>
