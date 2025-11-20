@@ -1,0 +1,23 @@
+Task 1: Create a text field and three buttons below it., three buttons should contain the same colors
+which when clicked changes the color of the background of the text field
+
+Task 2: create a text field and button and clicking on button print the text below in text field
+
+Task 3: provide a text field with default value 0 and two button "+" and "-",
+below it, the counter value should change as per the button clicked,
+if the counter value goes below 0, the text color should change to red
+if the counter value is 0 the text color should be black, or else green
+
+
+//task 4:
+// create a textfield, as per the user's input, navigate to
+// respective pages, for example if the value is less than 40,
+//navigate to FailActivity, if less than 80, navigate to FirstActivity,
+//if more than 80 then navigate to DistinctionActivity, in the
+// navigated activity, display the status of the user(i.e. fail,
+// pass, distinction)
+
+
+
+// create a button which switches between light mode and dark mode, which
+// should change the text color , background color of the contents inside the screen
