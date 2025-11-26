@@ -69,6 +69,12 @@ public class MainActivity extends AppCompatActivity{
 //        Task3 Count
         setContentView(R.layout.task3);
 
+        // ADDING FRAGMENT
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragmentContainer, new MessageFragment())
+                .commit();
+
         Button plus = findViewById(R.id.plus);
         Button minus = findViewById(R.id.minus);
         TextView result = findViewById(R.id.count);

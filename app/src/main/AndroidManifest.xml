@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAndroidApp">
         <activity
-            android:name=".ToggleActions"
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.FirstAndroidApp">
@@ -25,7 +25,7 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".FirstActivity" />
         <activity android:name=".DistinctionActivity" />
-<!--        <activity android:name=".ToggleActions" />-->
+        <activity android:name=".ToggleActions" />
     </application>
 
 </manifest>

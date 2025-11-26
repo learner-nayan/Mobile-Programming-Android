@@ -40,6 +40,12 @@
             android:text="Go to Second Activity"
             android:onClick="openSecondActivity"/>
 
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentContainer"
+            />
+
     </LinearLayout>
 
 </ScrollView>

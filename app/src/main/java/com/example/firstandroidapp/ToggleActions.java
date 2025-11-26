@@ -37,6 +37,5 @@ public class ToggleActions extends AppCompatActivity {
                 toggleBtn.setTextColor(Color.BLACK);
             }
         });
-
     }
 }
