@@ -38,12 +38,47 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Go to Second Activity"
-            android:onClick="openSecondActivity"/>
+            android:onClick="openSecondActivity"
+            />
+
+        <Button
+            android:id="@+id/showOpFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="OP"
+            android:backgroundTint="@color/black"
+            />
+
+        <Button
+            android:id="@+id/showLovelyFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lovely"
+            android:backgroundTint="@color/black"
+            />
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/fragmentContainer"-->
+<!--            />-->
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/opFragment"-->
+<!--            />-->
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/lovelyFragment"-->
+<!--            />-->
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/fragmentContainer"
+            android:id="@+id/mainFragment"
             />
 
     </LinearLayout>

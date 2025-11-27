@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity{
         // ADDING FRAGMENT
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragmentContainer, new MessageFragment())
+                .replace(R.id.mainFragment, new MessageFragment())
                 .commit();
 
         Button plus = findViewById(R.id.plus);
@@ -85,6 +86,18 @@ public class MainActivity extends AppCompatActivity{
 
         minus.setOnClickListener(e -> {
             update(--count);
+        });
+
+        // for fragments
+        Button showOpFragmentBtn = findViewById(R.id.showOpFragment);
+        Button showLovelyFragmentBtn = findViewById(R.id.showLovelyFragment);
+
+        showOpFragmentBtn.setOnClickListener((e) -> {
+            loadFragment(new OpFragment());
+        });
+
+        showLovelyFragmentBtn.setOnClickListener((e) -> {
+            loadFragment(new LovelyFragment());
         });
 
     }
@@ -111,13 +124,23 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
+    private void loadFragment(Fragment fragment){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.mainFragment, fragment)
+                .commit();
+    }
+
 }
 
 
 
 
 
+
+
 // copied class
+
 //public class MainActivity extends AppCompatActivity {
 //
 //    private static final String TAG = "LifecycleDemo";
